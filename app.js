@@ -1,4 +1,4 @@
-const { createPool } = require('mysql2');
+const { createPool } = require('mysql');
 const express = require('express');
 const bodyParser = require('body-parser'); // Import body-parser
 const app = express();
