@@ -1,0 +1,145 @@
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<style>
+    .grey-bg {  
+        background-color: #eef2f8;
+    }
+    .card {
+        max-width: 400px; 
+        height :150px;
+        padding: 15px;
+        font-size: 1.5em;
+        /* Adjust this value to your desired width */
+    }
+    .left-panel {
+        flex: 1;
+        padding: 12px;
+    }
+    table {
+        width: 350px; 
+        border-collapse: collapse;
+    }
+    
+    table,th,td{
+        border: 1px solid #eeebeb;
+    
+    }
+    th {
+        padding: 5px;
+        text-align: left;
+        background-color: #090c42;
+        color: white;
+    
+    }
+    td {
+        padding:5px;
+        border: 1px solid #807c7c;
+    
+    }
+        
+    .table-container {
+        max-width: 380px;
+        margin-left: auto; /* Push the container to the right */
+    }
+    .table-scroll {
+        max-height: 700px; /* Adjust the max height as needed */
+        overflow-y: auto; /* Enable vertical scrollbar */
+    }
+    
+    tr:nth-child(even){background-color: #ebeaec;}
+    tr:hover {background-color: #ddd;}
+    .label-width {
+        width: 100px; /* Set the desired width */
+        /* Add any other desired styles for the label */
+        }
+
+        .warning {
+            color: #5dec24!important;
+        }
+        .success {
+            color: #e909a6!important;
+        }
+        .notwarning {
+            color: #fa0808!important;
+        }
+        .bold-uppercase {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+</style>
+<div class="grey-bg container-fluid">
+    <br>
+    
+  <section id="minimal-statistics">
+    <h1 class="mt-4">DASHBOARD</h1>
+    <h3 class="bold-uppercase">{{selectedTable}}</h3>
+
+    <div class="row">
+      <div class="col-2 mt-3 mb-1">
+       
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                    <i class="icon-graph success font-large-3 float-left"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>{{averageKmPerDay}}</h3>
+                  <span>AVERAGE KM/DAY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                    <i class="icon-power warning font-large-3 float-left custom-icon-color"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>{{onCount}}</h3>
+                  <span>ignition On count</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="align-self-center">
+                    <i class="icon-power notwarning font-large-3 float-left custom-icon-color"></i>
+                </div>
+                <div class="media-body text-right">
+                  <h3>{{offCount}}</h3>
+                  <span>ignition Off count</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  
+ 
+  </div>
+</section>
+</div>
