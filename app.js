@@ -2,7 +2,7 @@ const { createPool } = require('mysql');
 const express = require('express');
 const bodyParser = require('body-parser'); // Import body-parser
 const app = express();
-const port = 9035;
+const port = 5000;
 const pool = createPool({
     host: 'ingo-flee.chcwfzqnq2ii.ap-south-2.rds.amazonaws.com',
     user: 'admin',
